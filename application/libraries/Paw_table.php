@@ -67,7 +67,7 @@ class Paw_table {
                 "iTotalRecords" => $this->iTotalRecords,
                 "iTotalDisplayRecords" => $this->iTotalDisplayRecords,
                 "aaData" => array(),
-                "qry" => $this->ci->db->last_query(),
+                "qry" => $this->sQuery,
             );
             if($subtable!==null && $table_key!==null){
                 $this->iDetail = $this->_sub_table($subtable);
